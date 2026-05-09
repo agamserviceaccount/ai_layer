@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+ai-layer-report.html
+ai-layer-report.json
+ai-layer-report.md
+.DS_Store
