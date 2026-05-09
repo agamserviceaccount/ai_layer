@@ -7,24 +7,20 @@ AI Layer helps development teams manage their "AI context" — the hidden files 
 
 ## Quick Start
 
-### Install
+### Install via GitHub Packages
+First, authenticate with GitHub Packages or add the registry to your `.npmrc`:
 ```bash
-npm install
+echo "@agamserviceaccount:https://npm.pkg.github.com" >> ~/.npmrc
 ```
 
-### Build
+Then install globally:
 ```bash
-npm run build
+npm install -g @agamserviceaccount/ai_layer
 ```
 
-### Test
+Or run directly via `npx`:
 ```bash
-npm test
-```
-
-### Run
-```bash
-npm run dev -- audit
+npx @agamserviceaccount/ai_layer audit
 ```
 
 ## Architecture Overview

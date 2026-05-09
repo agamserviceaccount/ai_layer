@@ -1,9 +1,15 @@
 {
-  "name": "ai_layer",
+  "name": "@agamserviceaccount/ai_layer",
   "version": "1.0.0",
-  "description": "",
+  "description": "A comprehensive CLI platform for AI-first software engineering, providing repository-aware context generation, AI layer auditing, and MCP server management.",
   "main": "dist/cli/index.js",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bin": {
     "ailayer": "./dist/cli/index.js"
   },
