@@ -8,32 +8,32 @@ AI Layer helps development teams manage their "AI context" — the hidden files 
 ## Quick Start
 
 ### Install
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 ### Build
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 ### Test
-\`\`\`bash
+```bash
 npm test
-\`\`\`
+```
 
 ### Run
-\`\`\`bash
+```bash
 npm run dev -- audit
-\`\`\`
+```
 
 ## Architecture Overview
 This is a robust TypeScript project engineered with a clear separation of concerns, designed specifically to operate as a self-contained AI-first engineering platform. The structure is divided as follows:
-- \`src/cli/\` — The main CLI entry points, parsing user arguments with the `cac` library, formatting terminal output with `picocolors`, and routing commands to the correct sub-systems.
-- \`src/audit/\` — The core rules and scoring logic engine. This directory evaluates AI context health across 8 dimensions (coverage, token efficiency, redundancy, context quality, and agent best practices).
-- \`src/scan/\` — Recursive repository scanning. It walks the file system ignoring `.git` and `node_modules`, detecting monorepo subprojects and gathering `RepoFacts`.
-- \`src/output/\` — Reporting and formatting layer. It converts raw audit data into actionable improvement plans, terminal tables, HTML dashboards, and JSON.
-- \`src/ai/\` — Gemini AI integration layer. Used to power the `--ai` flag by reading local AI layer configurations and generating deep contextual insights.
+- `src/cli/` — The main CLI entry points, parsing user arguments with the `cac` library, formatting terminal output with `picocolors`, and routing commands to the correct sub-systems.
+- `src/audit/` — The core rules and scoring logic engine. This directory evaluates AI context health across 8 dimensions (coverage, token efficiency, redundancy, context quality, and agent best practices).
+- `src/scan/` — Recursive repository scanning. It walks the file system ignoring `.git` and `node_modules`, detecting monorepo subprojects and gathering `RepoFacts`.
+- `src/output/` — Reporting and formatting layer. It converts raw audit data into actionable improvement plans, terminal tables, HTML dashboards, and JSON.
+- `src/ai/` — Gemini AI integration layer. Used to power the `--ai` flag by reading local AI layer configurations and generating deep contextual insights.
 
 ## Features
 - **Zero-Config Auditing**: Just run `ailayer audit` and get an instant score of your AI layer health out of 100.
